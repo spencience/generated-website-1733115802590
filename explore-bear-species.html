@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore different bear species from around the world. Learn about polar bears, grizzlies, black bears, pandas, and more at BearFacts Central.">
+    <meta name="keywords" content="bear species, polar bear, grizzly bear, black bear, panda bear, sun bear, sloth bear, spectacled bear">
+    <title>Explore Bear Species - BearFacts Central</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bear-paw {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background: #8B4513;
+            border-radius: 50%;
+        }
+        .bear-paw::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+            background: #8B4513;
+            border-radius: 50%;
+        }
+        .species-card {
+            transition: transform 0.3s ease;
+        }
+        .species-card:hover {
+            transform: translateY(-5px);
+        }
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+            }
+            .nav-links.active {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body class="bg-amber-50 min-h-screen flex flex-col">
+    <!-- Header remains the same as template -->
+    <header class="bg-brown-800 text-white p-4 shadow-lg">
+        <!-- Header content same as template -->
+    </header>
+
+    <main class="flex-grow container mx-auto p-4">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h1 class="text-4xl font-bold text-brown-900 mb-6">Bear Species Guide</h1>
+            
+            <nav class="mb-8">
+                <ul class="flex flex-wrap gap-4">
+                    <li><a href="#polar" class="px-4 py-2 bg-amber-100 rounded-full hover:bg-amber-200">Polar Bears</a></li>
+                    <li><a href="#grizzly" class="px-4 py-2 bg-amber-100 rounded-full hover:bg-amber-200">Grizzly Bears</a></li>
+                    <li><a href="#black" class="px-4 py-2 bg-amber-100 rounded-full hover:bg-amber-200">Black Bears</a></li>
+                    <li><a href="#panda" class="px-4 py-2 bg-amber-100 rounded-full hover:bg-amber-200">Giant Pandas</a></li>
+                </ul>
+            </nav>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div id="polar" class="species-card bg-blue-50 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold text-brown-800 mb-4">Polar Bear</h2>
+                    <p class="text-gray-700 mb-4">The largest land carnivore, perfectly adapted to Arctic conditions with thick fur and blubber for insulation.</p>
+                    <a href="https://bearfacts.nature/species/polar" class="text-blue-600 hover:underline">Learn more →</a>
+                </div>
+
+                <div id="grizzly" class="species-card bg-amber-50 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold text-brown-800 mb-4">Grizzly Bear</h2>
+                    <p class="text-gray-700 mb-4">Known for their distinctive shoulder hump and long claws, these powerful bears are found across North America.</p>
+                    <a href="https://bearfacts.nature/species/grizzly" class="text-blue-600 hover:underline">Learn more →</a>
+                </div>
+
+                <div id="black" class="species-card bg-gray-50 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold text-brown-800 mb-4">American Black Bear</h2>
+                    <p class="text-gray-700 mb-4">The most common bear in North America, known for their adaptability and varied diet.</p>
+                    <a href="https://bearfacts.nature/species/black" class="text-blue-600 hover:underline">Learn more →</a>
+                </div>
+
+                <div id="panda" class="species-card bg-green-50 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold text-brown-800 mb-4">Giant Panda</h2>
+                    <p class="text-gray-700 mb-4">Beloved bamboo specialists native to China's mountains, known for their distinctive black and white coloring.</p>
+                    <a href="https://bearfacts.nature/species/panda" class="text-blue-600 hover:underline">Learn more →</a>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-amber-100 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-brown-800 mb-4">Did You Know?</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>There are 8 species of bears found worldwide</li>
+                    <li>The sun bear is the smallest of all bear species</li>
+                    <li>Spectacled bears are the only bears native to South America</li>
+                </ul>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-2xl font-semibold text-brown-800 mb-4">Conservation Status</h3>
+                <p class="text-gray-700 mb-4">Many bear species face threats from habitat loss and climate change. Learn how you can help protect these magnificent creatures.</p>
+                <a href="https://bearfacts.nature/conservation" class="inline-block px-6 py-3 bg-brown-800 text-white rounded-lg hover:bg-brown-700">Support Bear Conservation</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brown-900 text-white p-4 mt-8">
+        <!-- Footer content same as template -->
+    </footer>
+</body>
+</html>

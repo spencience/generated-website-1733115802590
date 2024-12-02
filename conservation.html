@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about global bear conservation efforts, threats to bear populations, and how you can help protect these magnificent creatures for future generations.">
+    <meta name="keywords" content="bear conservation, wildlife protection, endangered bears, bear habitat preservation, bear sanctuary">
+    <title>Bear Conservation - Protecting Our Ursine Friends | BearFacts Central</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bear-paw {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background: #8B4513;
+            border-radius: 50%;
+        }
+        .bear-paw::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+            background: #8B4513;
+            border-radius: 50%;
+        }
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+            }
+            .nav-links.active {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body class="bg-amber-50 min-h-screen flex flex-col">
+    <header class="bg-brown-800 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="bear-paw"></div>
+                <a href="https://bearfacts.nature/home" class="text-2xl font-bold">BearFacts Central</a>
+            </div>
+            <nav class="nav-links md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="https://bearfacts.nature/species" class="hover:text-amber-300">Bear Species</a></li>
+                    <li><a href="https://bearfacts.nature/habitat" class="hover:text-amber-300">Habitats</a></li>
+                    <li><a href="https://bearfacts.nature/conservation" class="hover:text-amber-300">Conservation</a></li>
+                    <li><a href="https://bearfacts.nature/gallery" class="hover:text-amber-300">Bear Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h1 class="text-4xl font-bold text-brown-900 mb-6">Bear Conservation Efforts</h1>
+            
+            <nav class="mb-8">
+                <ul class="flex flex-wrap gap-4 text-sm">
+                    <li><a href="#current-status" class="text-brown-700 hover:text-amber-600">Current Status</a></li>
+                    <li><a href="#threats" class="text-brown-700 hover:text-amber-600">Threats</a></li>
+                    <li><a href="#conservation-programs" class="text-brown-700 hover:text-amber-600">Conservation Programs</a></li>
+                    <li><a href="#how-to-help" class="text-brown-700 hover:text-amber-600">How to Help</a></li>
+                </ul>
+            </nav>
+
+            <section id="current-status" class="mb-8">
+                <h2 class="text-2xl font-semibold text-brown-800 mb-4">Current Conservation Status</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <p class="text-gray-700">Of the world's eight bear species, six are currently listed as vulnerable or endangered. Climate change, habitat loss, and human conflict pose significant threats to bear populations globally.</p>
+                        <div class="bg-amber-100 p-4 rounded-lg">
+                            <h3 class="text-xl font-semibold text-brown-800 mb-2">Critical Numbers</h3>
+                            <ul class="list-disc list-inside text-gray-700">
+                                <li>Giant Pandas: ~1,864 in the wild</li>
+                                <li>Polar Bears: 22,000-31,000 remaining</li>
+                                <li>Sun Bears: Population unknown, rapidly declining</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-amber-50 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold text-brown-800 mb-2">Success Stories</h3>
+                        <p class="text-gray-700">Thanks to conservation efforts, some bear populations are showing signs of recovery. The Giant Panda was downlisted from "endangered" to "vulnerable" in 2016.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="threats" class="mb-8">
+                <h2 class="text-2xl font-semibold text-brown-800 mb-4">Major Threats</h2>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-brown-800 mb-2">Habitat Loss</h3>
+                        <p class="text-gray-700">Deforestation and urban development continue to fragment bear habitats worldwide.</p>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-brown-800 mb-2">Climate Change</h3>
+                        <p class="text-gray-700">Rising temperatures affect hibernation patterns and food availability.</p>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-brown-800 mb-2">Human Conflict</h3>
+                        <p class="text-gray-700">Increasing human-bear interactions lead to conflicts and bear deaths.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="conservation-programs" class="mb-8">
+                <h2 class="text-2xl font-semibold text-brown-800 mb-4">Active Conservation Programs</h2>
+                <div class="space-y-4">
+                    <div class="border-l-4 border-amber-500 pl-4">
+                        <h3 class="text-xl font-semibold text-brown-800">Protected Areas</h3>
+                        <p class="text-gray-700">Establishment and maintenance of national parks and wildlife reserves.</p>
+                    </div>
+                    <div class="border-l-4 border-amber-500 pl-4">
+                        <h3 class="text-xl font-semibold text-brown-800">Breeding Programs</h3>
+                        <p class="text-gray-700">Captive breeding and rehabilitation centers for endangered species.</p>
+                    </div>
+                    <div class="border-l-4 border-amber-500 pl-4">
+                        <h3 class="text-xl font-semibold text-brown-800">Research Initiatives</h3>
+                        <p class="text-gray-700">Scientific studies on bear behavior, habitat needs, and population dynamics.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how-to-help" class="mb-8">
+                <h2 class="text-2xl font-semibold text-brown-800 mb-4">How You Can Help</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold text-brown-800 mb-2">Take Action</h3>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>Support conservation organizations</li>
+                            <li>Reduce your carbon footprint</li>
+                            <li>Practice responsible outdoor recreation</li>
+                            <li>Educate others about bear conservation</li>
+                        </ul>
+                    </div>
+                    <div class="bg-amber-100 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold text-brown-800 mb-2">Get Involved</h3>
+                        <p class="text-gray-700">Join our community of bear conservationists:</p>
+                        <div class="mt-4">
+                            <a href="https://bearfacts.nature/donate" class="inline-block bg-brown-800 text-white px-6 py-2 rounded-lg hover:bg-brown-700">Donate Now</a>
+                            <a href="https://bearfacts.nature/volunteer" class="inline-block ml-4 bg-amber-500 text-white px-6 py-2 rounded-lg hover:bg-amber-600">Volunteer</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-brown-900 text-white p-4 mt-8">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/about" class="hover:text-amber-300">About Us</a></li>
+                        <li><a href="https://bearfacts.nature/contact" class="hover:text-amber-300">Contact</a></li>
+                        <li><a href="https://bearfacts.nature/donate" class="hover:text-amber-300">Support Conservation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/research" class="hover:text-amber-300">Research</a></li>
+                        <li><a href="https://bearfacts.nature/education" class="hover:text-amber-300">Education</a></li>
+                        <li><a href="https://bearfacts.nature/news" class="hover:text-amber-300">Bear News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/newsletter" class="hover:text-amber-300">Newsletter</a></li>
+                        <li><a href="https://bearfacts.nature/community" class="hover:text-amber-300">Community</a></li>
+                        <li><a href="https://bearfacts.nature/events" class="hover:text-amber-300">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400">
+                <p>&copy; 2024 BearFacts Central. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest bear research, scientific studies, and conservation efforts. Access peer-reviewed publications and ongoing research projects about bears worldwide.">
+    <meta name="keywords" content="bear research, ursidae studies, bear conservation research, bear behavior studies, bear habitat research">
+    <title>Bear Research - Scientific Studies and Conservation | BearFacts Central</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bear-paw {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background: #8B4513;
+            border-radius: 50%;
+        }
+        .bear-paw::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+            background: #8B4513;
+            border-radius: 50%;
+        }
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+            }
+            .nav-links.active {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body class="bg-amber-50 min-h-screen flex flex-col">
+    <header class="bg-brown-800 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="bear-paw"></div>
+                <a href="https://bearfacts.nature/home" class="text-2xl font-bold">BearFacts Central</a>
+            </div>
+            <nav class="nav-links md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="https://bearfacts.nature/species" class="hover:text-amber-300">Bear Species</a></li>
+                    <li><a href="https://bearfacts.nature/habitat" class="hover:text-amber-300">Habitats</a></li>
+                    <li><a href="https://bearfacts.nature/conservation" class="hover:text-amber-300">Conservation</a></li>
+                    <li><a href="https://bearfacts.nature/gallery" class="hover:text-amber-300">Bear Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h1 class="text-4xl font-bold text-brown-900 mb-6">Bear Research Hub</h1>
+            
+            <nav class="mb-8">
+                <ul class="flex flex-wrap gap-4 text-sm">
+                    <li><a href="#current-studies" class="text-brown-700 hover:text-amber-600">Current Studies</a></li>
+                    <li><a href="#publications" class="text-brown-700 hover:text-amber-600">Publications</a></li>
+                    <li><a href="#research-projects" class="text-brown-700 hover:text-amber-600">Research Projects</a></li>
+                    <li><a href="#contribute" class="text-brown-700 hover:text-amber-600">Contribute</a></li>
+                </ul>
+            </nav>
+
+            <section id="current-studies" class="mb-12">
+                <h2 class="text-2xl font-semibold text-brown-800 mb-4">Current Studies</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-amber-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Polar Bear Migration Patterns</h3>
+                        <p class="text-gray-700 mb-4">Tracking the impact of climate change on polar bear movement and adaptation strategies in the Arctic.</p>
+                        <a href="https://bearfacts.nature/research/polar-migration" class="text-amber-600 hover:text-amber-700">Learn more →</a>
+                    </div>
+                    <div class="bg-amber-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Grizzly Bear Diet Analysis</h3>
+                        <p class="text-gray-700 mb-4">Investigating seasonal dietary changes and human impact on grizzly bear feeding patterns.</p>
+                        <a href="https://bearfacts.nature/research/grizzly-diet" class="text-amber-600 hover:text-amber-700">Learn more →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="publications" class="mb-12">
+                <h2 class="text-2xl font-semibold text-brown-800 mb-4">Latest Publications</h2>
+                <div class="space-y-4">
+                    <div class="border-l-4 border-amber-400 pl-4">
+                        <h3 class="font-semibold">Hibernation Patterns in American Black Bears</h3>
+                        <p class="text-gray-600">Published in Journal of Wildlife Biology, 2024</p>
+                        <a href="https://bearfacts.nature/research/publications/hibernation-2024" class="text-amber-600 hover:text-amber-700">Read Abstract →</a>
+                    </div>
+                    <div class="border-l-4 border-amber-400 pl-4">
+                        <h3 class="font-semibold">Social Behavior in Asian Black Bears</h3>
+                        <p class="text-gray-600">Published in Animal Behavior Quarterly, 2023</p>
+                        <a href="https://bearfacts.nature/research/publications/asian-bears-social" class="text-amber-600 hover:text-amber-700">Read Abstract →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="research-projects" class="mb-12">
+                <h2 class="text-2xl font-semibold text-brown-800 mb-4">Ongoing Research Projects</h2>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <a href="https://bearfacts.nature/research/projects/dna" class="block bg-amber-100 p-4 rounded-lg hover:bg-amber-200">
+                        <h3 class="font-semibold">Bear DNA Analysis</h3>
+                        <p class="text-sm text-gray-700">Genetic diversity studies across species</p>
+                    </a>
+                    <a href="https://bearfacts.nature/research/projects/behavior" class="block bg-amber-100 p-4 rounded-lg hover:bg-amber-200">
+                        <h3 class="font-semibold">Behavioral Studies</h3>
+                        <p class="text-sm text-gray-700">Understanding bear social structures</p>
+                    </a>
+                    <a href="https://bearfacts.nature/research/projects/conservation" class="block bg-amber-100 p-4 rounded-lg hover:bg-amber-200">
+                        <h3 class="font-semibold">Conservation Efforts</h3>
+                        <p class="text-sm text-gray-700">Habitat preservation initiatives</p>
+                    </a>
+                </div>
+            </section>
+
+            <section id="contribute" class="bg-amber-50 p-6 rounded-lg">
+                <h2 class="text-2xl font-semibold text-brown-800 mb-4">Contribute to Research</h2>
+                <p class="text-gray-700 mb-4">Are you a researcher or citizen scientist interested in contributing to bear studies?</p>
+                <div class="space-x-4">
+                    <a href="https://bearfacts.nature/research/submit-data" class="inline-block bg-amber-600 text-white px-4 py-2 rounded hover:bg-amber-700">Submit Data</a>
+                    <a href="https://bearfacts.nature/research/collaborate" class="inline-block bg-brown-800 text-white px-4 py-2 rounded hover:bg-brown-900">Research Collaboration</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-brown-900 text-white p-4 mt-8">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/about" class="hover:text-amber-300">About Us</a></li>
+                        <li><a href="https://bearfacts.nature/contact" class="hover:text-amber-300">Contact</a></li>
+                        <li><a href="https://bearfacts.nature/donate" class="hover:text-amber-300">Support Conservation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/research" class="hover:text-amber-300">Research</a></li>
+                        <li><a href="https://bearfacts.nature/education" class="hover:text-amber-300">Education</a></li>
+                        <li><a href="https://bearfacts.nature/news" class="hover:text-amber-300">Bear News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/newsletter" class="hover:text-amber-300">Newsletter</a></li>
+                        <li><a href="https://bearfacts.nature/community" class="hover:text-amber-300">Community</a></li>
+                        <li><a href="https://bearfacts.nature/events" class="hover:text-amber-300">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400">
+                <p>&copy; 2024 BearFacts Central. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

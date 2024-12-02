@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore bear habitats worldwide. Learn about where different bear species live, their natural environments, and how habitat loss affects bear populations.">
+    <meta name="keywords" content="bear habitats, bear environments, bear ecosystems, where do bears live, bear conservation">
+    <title>Bear Habitats - Natural Environments of Bears | BearFacts Central</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bear-paw {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background: #8B4513;
+            border-radius: 50%;
+        }
+        .bear-paw::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+            background: #8B4513;
+            border-radius: 50%;
+        }
+        .habitat-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+            }
+            .nav-links.active {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body class="bg-amber-50 min-h-screen flex flex-col">
+    <header class="bg-brown-800 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="bear-paw"></div>
+                <a href="https://bearfacts.nature/home" class="text-2xl font-bold">BearFacts Central</a>
+            </div>
+            <nav class="nav-links md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="https://bearfacts.nature/species" class="hover:text-amber-300">Bear Species</a></li>
+                    <li><a href="https://bearfacts.nature/habitat" class="hover:text-amber-300 font-bold text-amber-300">Habitats</a></li>
+                    <li><a href="https://bearfacts.nature/conservation" class="hover:text-amber-300">Conservation</a></li>
+                    <li><a href="https://bearfacts.nature/gallery" class="hover:text-amber-300">Bear Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h1 class="text-4xl font-bold text-brown-900 mb-6">Bear Habitats Around the World</h1>
+            
+            <nav class="mb-8">
+                <ul class="flex flex-wrap gap-4 text-sm">
+                    <li><a href="#arctic" class="bg-amber-100 px-4 py-2 rounded-full hover:bg-amber-200">Arctic Tundra</a></li>
+                    <li><a href="#forest" class="bg-amber-100 px-4 py-2 rounded-full hover:bg-amber-200">Forest Regions</a></li>
+                    <li><a href="#mountain" class="bg-amber-100 px-4 py-2 rounded-full hover:bg-amber-200">Mountain Areas</a></li>
+                    <li><a href="#bamboo" class="bg-amber-100 px-4 py-2 rounded-full hover:bg-amber-200">Bamboo Forests</a></li>
+                </ul>
+            </nav>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <section id="arctic" class="bg-blue-50 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold text-brown-800 mb-4">Arctic Tundra</h2>
+                    <p class="text-gray-700 mb-4">Home to polar bears, the Arctic tundra is characterized by its frozen landscapes and sea ice. These bears have adapted to survive in temperatures as low as -50°C (-58°F).</p>
+                    <a href="https://bearfacts.nature/habitat/arctic" class="text-blue-600 hover:underline">Learn more about polar bear habitats →</a>
+                </section>
+
+                <section id="forest" class="bg-green-50 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold text-brown-800 mb-4">Forest Regions</h2>
+                    <p class="text-gray-700 mb-4">Black bears and brown bears thrive in various forest types, from temperate deciduous forests to boreal forests, feeding on diverse vegetation and prey.</p>
+                    <a href="https://bearfacts.nature/habitat/forest" class="text-green-600 hover:underline">Explore forest bear habitats →</a>
+                </section>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <section id="mountain" class="bg-gray-50 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold text-brown-800 mb-4">Mountain Areas</h2>
+                    <p class="text-gray-700 mb-4">Grizzly bears and Asiatic black bears inhabit mountainous regions, adapting to different elevations and seasonal changes in food availability.</p>
+                    <a href="https://bearfacts.nature/habitat/mountain" class="text-gray-600 hover:underline">Discover mountain bear territories →</a>
+                </section>
+
+                <section id="bamboo" class="bg-amber-50 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold text-brown-800 mb-4">Bamboo Forests</h2>
+                    <p class="text-gray-700 mb-4">Giant pandas are specialized to live in the mountainous bamboo forests of central China, where they feed almost exclusively on bamboo.</p>
+                    <a href="https://bearfacts.nature/habitat/bamboo" class="text-amber-600 hover:underline">Visit panda habitats →</a>
+                </section>
+            </div>
+
+            <div class="mt-8 bg-red-50 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-red-800 mb-4">Habitat Conservation Alert</h3>
+                <p class="text-gray-700 mb-4">Many bear habitats are under threat from climate change, deforestation, and human development. Learn how you can help protect these crucial environments.</p>
+                <a href="https://bearfacts.nature/conservation/habitat-protection" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 inline-block">Support Habitat Protection</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brown-900 text-white p-4 mt-8">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/about" class="hover:text-amber-300">About Us</a></li>
+                        <li><a href="https://bearfacts.nature/contact" class="hover:text-amber-300">Contact</a></li>
+                        <li><a href="https://bearfacts.nature/donate" class="hover:text-amber-300">Support Conservation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/research" class="hover:text-amber-300">Research</a></li>
+                        <li><a href="https://bearfacts.nature/education" class="hover:text-amber-300">Education</a></li>
+                        <li><a href="https://bearfacts.nature/news" class="hover:text-amber-300">Bear News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/newsletter" class="hover:text-amber-300">Newsletter</a></li>
+                        <li><a href="https://bearfacts.nature/community" class="hover:text-amber-300">Community</a></li>
+                        <li><a href="https://bearfacts.nature/events" class="hover:text-amber-300">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400">
+                <p>&copy; 2024 BearFacts Central. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the fascinating world of bear species. Learn about different types of bears, their characteristics, habitats, and conservation status.">
+    <meta name="keywords" content="bears, bear species, grizzly bears, polar bears, black bears, panda bears, wildlife, conservation">
+    <title>Bear Species Guide | BearFacts Central</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bear-paw {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background: #8B4513;
+            border-radius: 50%;
+        }
+        .bear-paw::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+            background: #8B4513;
+            border-radius: 50%;
+        }
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+            }
+            .nav-links.active {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body class="bg-amber-50 min-h-screen flex flex-col">
+    <header class="bg-brown-800 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="bear-paw"></div>
+                <a href="https://bearfacts.nature/home" class="text-2xl font-bold">BearFacts Central</a>
+            </div>
+            <nav class="nav-links md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="https://bearfacts.nature/species" class="hover:text-amber-300">Bear Species</a></li>
+                    <li><a href="https://bearfacts.nature/habitat" class="hover:text-amber-300">Habitats</a></li>
+                    <li><a href="https://bearfacts.nature/conservation" class="hover:text-amber-300">Conservation</a></li>
+                    <li><a href="https://bearfacts.nature/gallery" class="hover:text-amber-300">Bear Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h1 class="text-4xl font-bold text-brown-900 mb-6">Bear Species Guide</h1>
+            
+            <nav class="mb-8">
+                <ul class="flex flex-wrap gap-4">
+                    <li><a href="#brown-bears" class="px-4 py-2 bg-amber-100 rounded-full hover:bg-amber-200">Brown Bears</a></li>
+                    <li><a href="#black-bears" class="px-4 py-2 bg-amber-100 rounded-full hover:bg-amber-200">Black Bears</a></li>
+                    <li><a href="#polar-bears" class="px-4 py-2 bg-amber-100 rounded-full hover:bg-amber-200">Polar Bears</a></li>
+                    <li><a href="#panda-bears" class="px-4 py-2 bg-amber-100 rounded-full hover:bg-amber-200">Giant Pandas</a></li>
+                    <li><a href="#sun-bears" class="px-4 py-2 bg-amber-100 rounded-full hover:bg-amber-200">Sun Bears</a></li>
+                </ul>
+            </nav>
+
+            <section id="brown-bears" class="mb-12">
+                <h2 class="text-3xl font-semibold text-brown-800 mb-4">Brown Bears (Ursus arctos)</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <p class="text-gray-700">Brown bears are among the most widespread bear species. They're known for their impressive size and adaptability across various habitats.</p>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>Weight: 180-360 kg (males)</li>
+                            <li>Habitat: Forests, mountains, tundra</li>
+                            <li>Diet: Omnivorous</li>
+                        </ul>
+                        <a href="https://bearfacts.nature/species/brown-bears" class="text-amber-700 hover:text-amber-900 font-semibold">Learn more about Brown Bears →</a>
+                    </div>
+                    <div class="bg-amber-100 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold text-brown-800 mb-2">Conservation Status</h3>
+                        <p class="text-gray-700">Least Concern - Though populations are stable in many areas, habitat loss remains a concern.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="black-bears" class="mb-12">
+                <h2 class="text-3xl font-semibold text-brown-800 mb-4">American Black Bears (Ursus americanus)</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <p class="text-gray-700">Black bears are the most common bear species in North America, known for their intelligence and adaptability to human presence.</p>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>Weight: 130-280 kg (males)</li>
+                            <li>Habitat: Forests, urban interfaces</li>
+                            <li>Diet: Omnivorous, opportunistic</li>
+                        </ul>
+                        <a href="https://bearfacts.nature/species/black-bears" class="text-amber-700 hover:text-amber-900 font-semibold">Learn more about Black Bears →</a>
+                    </div>
+                    <div class="bg-amber-100 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold text-brown-800 mb-2">Did You Know?</h3>
+                        <p class="text-gray-700">Despite their name, black bears can be brown, cinnamon, or even white in color!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-amber-50 p-6 rounded-lg mb-8">
+                <h3 class="text-2xl font-semibold text-brown-800 mb-4">Explore More Bear Species</h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <a href="https://bearfacts.nature/species/spectacled-bears" class="p-4 bg-white rounded-lg hover:shadow-md">
+                        <h4 class="font-semibold text-brown-800">Spectacled Bears</h4>
+                        <p class="text-gray-600">South America's only bear species</p>
+                    </a>
+                    <a href="https://bearfacts.nature/species/sloth-bears" class="p-4 bg-white rounded-lg hover:shadow-md">
+                        <h4 class="font-semibold text-brown-800">Sloth Bears</h4>
+                        <p class="text-gray-600">Insect-loving bears of South Asia</p>
+                    </a>
+                    <a href="https://bearfacts.nature/species/asiatic-black-bears" class="p-4 bg-white rounded-lg hover:shadow-md">
+                        <h4 class="font-semibold text-brown-800">Asiatic Black Bears</h4>
+                        <p class="text-gray-600">Also known as Moon Bears</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-brown-900 text-white p-4 mt-8">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/about" class="hover:text-amber-300">About Us</a></li>
+                        <li><a href="https://bearfacts.nature/contact" class="hover:text-amber-300">Contact</a></li>
+                        <li><a href="https://bearfacts.nature/donate" class="hover:text-amber-300">Support Conservation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/research" class="hover:text-amber-300">Research</a></li>
+                        <li><a href="https://bearfacts.nature/education" class="hover:text-amber-300">Education</a></li>
+                        <li><a href="https://bearfacts.nature/news" class="hover:text-amber-300">Bear News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/newsletter" class="hover:text-amber-300">Newsletter</a></li>
+                        <li><a href="https://bearfacts.nature/community" class="hover:text-amber-300">Community</a></li>
+                        <li><a href="https://bearfacts.nature/events" class="hover:text-amber-300">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400">
+                <p>&copy; 2024 BearFacts Central. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

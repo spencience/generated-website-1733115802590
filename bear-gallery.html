@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our stunning collection of bear photographs, artwork, and videos featuring different species of bears from around the world.">
+    <meta name="keywords" content="bear gallery, bear photos, bear videos, wildlife photography, bear art, nature gallery">
+    <title>Bear Gallery - BearFacts Central</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bear-paw {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background: #8B4513;
+            border-radius: 50%;
+        }
+        .bear-paw::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+            background: #8B4513;
+            border-radius: 50%;
+        }
+        .gallery-item {
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+            }
+            .nav-links.active {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body class="bg-amber-50 min-h-screen flex flex-col">
+    <header class="bg-brown-800 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="bear-paw"></div>
+                <a href="https://bearfacts.nature/home" class="text-2xl font-bold">BearFacts Central</a>
+            </div>
+            <nav class="nav-links md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="https://bearfacts.nature/species" class="hover:text-amber-300">Bear Species</a></li>
+                    <li><a href="https://bearfacts.nature/habitat" class="hover:text-amber-300">Habitats</a></li>
+                    <li><a href="https://bearfacts.nature/conservation" class="hover:text-amber-300">Conservation</a></li>
+                    <li><a href="https://bearfacts.nature/gallery" class="hover:text-amber-300 font-bold">Bear Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto p-4">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h1 class="text-4xl font-bold text-brown-900 mb-6">Bear Gallery</h1>
+            
+            <nav class="mb-8">
+                <ul class="flex space-x-4 border-b border-gray-200 pb-4">
+                    <li><a href="https://bearfacts.nature/gallery/photos" class="text-brown-800 hover:text-amber-600 font-semibold">Photos</a></li>
+                    <li><a href="https://bearfacts.nature/gallery/videos" class="text-brown-800 hover:text-amber-600 font-semibold">Videos</a></li>
+                    <li><a href="https://bearfacts.nature/gallery/artwork" class="text-brown-800 hover:text-amber-600 font-semibold">Artwork</a></li>
+                    <li><a href="https://bearfacts.nature/gallery/user-submissions" class="text-brown-800 hover:text-amber-600 font-semibold">User Submissions</a></li>
+                </ul>
+            </nav>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="gallery-item bg-amber-100 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-brown-800 mb-2">Featured Collection: Grizzlies of Yellowstone</h3>
+                    <div class="bg-amber-200 h-48 rounded-lg mb-4"></div>
+                    <p class="text-gray-700">A stunning collection showcasing the majestic grizzly bears in their natural habitat.</p>
+                    <a href="https://bearfacts.nature/gallery/collections/yellowstone-grizzlies" class="text-amber-600 hover:text-amber-700 mt-2 inline-block">View Collection →</a>
+                </div>
+
+                <div class="gallery-item bg-amber-100 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-brown-800 mb-2">Polar Bears: Arctic Kings</h3>
+                    <div class="bg-amber-200 h-48 rounded-lg mb-4"></div>
+                    <p class="text-gray-700">Explore the life of polar bears through stunning photography and videos.</p>
+                    <a href="https://bearfacts.nature/gallery/collections/polar-bears" class="text-amber-600 hover:text-amber-700 mt-2 inline-block">View Collection →</a>
+                </div>
+
+                <div class="gallery-item bg-amber-100 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-brown-800 mb-2">Giant Pandas of China</h3>
+                    <div class="bg-amber-200 h-48 rounded-lg mb-4"></div>
+                    <p class="text-gray-700">Heartwarming moments captured of giant pandas in their bamboo forests.</p>
+                    <a href="https://bearfacts.nature/gallery/collections/giant-pandas" class="text-amber-600 hover:text-amber-700 mt-2 inline-block">View Collection →</a>
+                </div>
+            </div>
+
+            <div class="mt-8 p-4 bg-amber-50 rounded-lg">
+                <h2 class="text-2xl font-semibold text-brown-800 mb-4">Submit Your Bear Photos</h2>
+                <p class="text-gray-700 mb-4">Have you captured amazing bear moments? Share them with our community!</p>
+                <a href="https://bearfacts.nature/gallery/submit" class="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 inline-block">Submit Photos</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brown-900 text-white p-4 mt-8">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/about" class="hover:text-amber-300">About Us</a></li>
+                        <li><a href="https://bearfacts.nature/contact" class="hover:text-amber-300">Contact</a></li>
+                        <li><a href="https://bearfacts.nature/donate" class="hover:text-amber-300">Support Conservation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/research" class="hover:text-amber-300">Research</a></li>
+                        <li><a href="https://bearfacts.nature/education" class="hover:text-amber-300">Education</a></li>
+                        <li><a href="https://bearfacts.nature/news" class="hover:text-amber-300">Bear News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://bearfacts.nature/newsletter" class="hover:text-amber-300">Newsletter</a></li>
+                        <li><a href="https://bearfacts.nature/community" class="hover:text-amber-300">Community</a></li>
+                        <li><a href="https://bearfacts.nature/events" class="hover:text-amber-300">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400">
+                <p>&copy; 2024 BearFacts Central. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

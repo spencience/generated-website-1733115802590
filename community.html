@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Ontologic Design Institute community. Connect with fellow designers, researchers, and practitioners exploring the intersection of being and mindful design.">
+    <meta name="keywords" content="ontologic design, design community, mindful design, design philosophy, design research">
+    <title>Community | Ontologic Design Institute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes subtle-glow {
+            0% { box-shadow: 0 0 5px rgba(255,255,255,0.1); }
+            50% { box-shadow: 0 0 15px rgba(255,255,255,0.2); }
+            100% { box-shadow: 0 0 5px rgba(255,255,255,0.1); }
+        }
+        .design-pattern {
+            background: linear-gradient(45deg, #0a0a0a 25%, transparent 25%),
+                        linear-gradient(-45deg, #0a0a0a 25%, transparent 25%),
+                        linear-gradient(45deg, transparent 75%, #0a0a0a 75%),
+                        linear-gradient(-45deg, transparent 75%, #0a0a0a 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900 text-gray-100 flex flex-col">
+    <header class="design-pattern bg-gray-800 border-b border-gray-700">
+        <nav class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <a href="https://ontologic.design/" class="text-2xl font-bold tracking-tight hover:text-emerald-400 transition-colors">
+                    Ontologic Design Institute
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="https://ontologic.design/principles" class="hover:text-emerald-400 transition-colors">Principles</a>
+                    <a href="https://ontologic.design/projects" class="hover:text-emerald-400 transition-colors">Projects</a>
+                    <a href="https://ontologic.design/research" class="hover:text-emerald-400 transition-colors">Research</a>
+                    <a href="https://ontologic.design/community" class="text-emerald-400 transition-colors">Community</a>
+                </div>
+                <button class="md:hidden p-2 hover:bg-gray-700 rounded">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg animate-[subtle-glow_4s_ease-in-out_infinite]">
+            <h1 class="text-4xl font-bold mb-6">Community</h1>
+            <p class="text-xl text-gray-300 mb-8">Connect with fellow practitioners and researchers in the field of ontologic design. Our community is dedicated to exploring the deeper meanings and implications of design in shaping reality.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold mb-4">Monthly Gatherings</h2>
+                    <p class="text-gray-300 mb-4">Join our virtual and in-person gatherings where members present their work, share insights, and engage in meaningful discussions about ontologic design practices.</p>
+                    <a href="https://ontologic.design/events/gatherings" class="text-emerald-400 hover:text-emerald-300">View upcoming gatherings →</a>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold mb-4">Discussion Forum</h2>
+                    <p class="text-gray-300 mb-4">Engage with our active community forum where members explore design philosophy, share resources, and collaborate on projects.</p>
+                    <a href="https://ontologic.design/forum" class="text-emerald-400 hover:text-emerald-300">Join the conversation →</a>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold mb-4">Mentorship Program</h2>
+                    <p class="text-gray-300 mb-4">Connect with experienced practitioners for guidance and support in your ontologic design journey.</p>
+                    <a href="https://ontologic.design/community/mentorship" class="text-emerald-400 hover:text-emerald-300">Learn more →</a>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold mb-4">Working Groups</h2>
+                    <p class="text-gray-300 mb-4">Join specialized groups focused on specific areas of ontologic design research and practice.</p>
+                    <a href="https://ontologic.design/community/groups" class="text-emerald-400 hover:text-emerald-300">Explore groups →</a>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold mb-4">Resource Library</h2>
+                    <p class="text-gray-300 mb-4">Access our community-curated collection of articles, papers, and design resources.</p>
+                    <a href="https://ontologic.design/resources" class="text-emerald-400 hover:text-emerald-300">Browse library →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="design-pattern bg-gray-800 border-t border-gray-700 mt-auto">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <a href="https://ontologic.design/contact" class="text-gray-400 hover:text-emerald-400 transition-colors">Get in touch</a>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://ontologic.design/publications" class="text-gray-400 hover:text-emerald-400 transition-colors">Publications</a></li>
+                        <li><a href="https://ontologic.design/events" class="text-gray-400 hover:text-emerald-400 transition-colors">Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://ontologic.design/newsletter" class="text-gray-400 hover:text-emerald-400 transition-colors">Newsletter</a></li>
+                        <li><a href="https://ontologic.design/forum" class="text-gray-400 hover:text-emerald-400 transition-colors">Forum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2024 Ontologic Design Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
